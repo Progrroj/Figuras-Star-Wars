@@ -1,0 +1,163 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url(../img/productos/Star-Wars-night-planet-space-sky-Earth-632864-wallhere.com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor{
+    width: min(83%, 120rem);
+    margin: 0 auto;
+    color: beige;
+ }
+
+.logo__nombre,
+.navegacion__enlace{
+ color: beige;
+}
+
+ .imgLogo{
+    size: 0.5rem;
+    justify-content: center;
+}
+/* Utilidades */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+.barra{
+    padding-top: 1rem;
+    color: beige;
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px){
+    .navegacion{
+     display: flex;
+     gap: 2rem;
+    }
+ }
+ .navegacion__enlace{
+     display: block;
+     text-align: center;
+     font-size: 1.5rem;
+ }
+
+ .fondo{
+    padding-top: 5rem;
+    padding-left: 2.5rem;
+ }
+.enviarFormulario{
+    color: #ffb13a;
+}
+
+.form{/*atributos del formulario*/
+    display: flex;
+    color:  #ffb13a;
+    width: 80vw;
+    height: 55vh;
+    font-size: 1.2vw;
+    
+}
+div{
+    margin: .5em 0;
+}
+div label {
+    width: 20%;
+    float: left;
+}
+label{
+    display: block;
+    margin: .5vw 0 0 0;
+    
+}
+.boton{
+    display: block;
+    margin: 8vw 6vw;
+}
+ form fieldset{
+    float: left;
+    width: 25%;
+    margin-left: 16vw;
+}
+input:focus{
+    border: 2px solid #ffb13a;
+    background: lightblue;
+}
+form input{
+    margin-left: 10%;
+}
+legend{/*atributos del recuadro*/
+    background-color: darkgray;
+    color:black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+fieldset{
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+}
+/*atributos del boton volver*/
+/* .retorno{
+    width: 4.5vw;
+    text-align: center;
+    background-color: black;
+    margin-top: 3%;
+    margin-left: 90%;
+    border: 2px solid #ffb13a;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px blue, 5px 5px 3px whitesmoke, 10px 10px 3px  #ffb13a;
+    
+}
+.back {
+    color:  #ffb13a;
+    font-size: 1vw;
+    text-align: center;
+} */
+#error {
+    color: #ffb13a;
+   
+    
+}
+span{
+    color: blue;
+    border-radius: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background: gray;
+    animation-name: arror;
+    animation-duration: 5s;
+    animation-iteration-count: 1000;
+}
+
+@keyframes arror {
+    0%   {opacity: 1;}
+    25%  {opacity: 0;}
+    50%  {opacity: 1;}
+    75%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+

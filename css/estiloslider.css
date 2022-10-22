@@ -1,0 +1,17 @@
+.boton1{
+    position: absolute;
+    margin-top: 200px;
+    font-size: 30px;
+    background: none;
+    border: 0;
+    color: white;
+}
+.boton2{
+    position: absolute;
+    margin-top: 186px;
+    margin-left: -80px;
+    font-size: 30px;
+    background: none;
+    border: 0;
+    color: white;
+}
