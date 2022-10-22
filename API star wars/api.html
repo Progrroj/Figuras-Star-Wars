@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #mostrar,#mostrar2,#mostrar3,#mostrar4,#mostrar5,#mostrar6 {
+            width: 95%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding: 1%;
+            font-size: 1vw;
+            color: yellow;
+            border: 2px solid whitesmoke;
+            border-radius: 15px;    
+        }
+        #mostrar.span{
+            text-decoration: underline;
+        }
+        .fondo{
+            background-image: url(Star-Wars-night-planet-space-sky-Earth-632864-wallhere.com.jpg);
+        }
+        h1{
+            color: yellow;
+            text-align: center;
+        }
+        span{
+            text-decoration: underline;
+          
+            
+        }
+    </style>
+    <title>Fetch-básico</title>
+</head>
+
+<body>
+    <div class="fondo">
+        <h1>PELICULAS</h1>          
+        <p id="mostrar"></p>
+        <p id="mostrar2"></p>
+        <p id="mostrar3"></p>
+        <p id="mostrar4"></p>
+        <p id="mostrar5"></p>
+        <p id="mostrar6"></p>
+    </div>
+
+    <script>
+         let url = 'https://swapi.dev/api/films/1'//variable donde hacemos referencia al origen de los datos
+            fetch(url) //solicitud a la url
+            .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+            .then(data => {
+                
+                let element = document.getElementById('mostrar');
+                element.innerHTML = `<p><span>TITULO</span>: ${data.title}</p>  
+                                     <p><span> DIRECTOR</span>:  ${data.director}</p> 
+                                     <p><span> FECHA DE ESTRENO</span>: ${data.release_date}</p> 
+                                     <p><span>ARGUMENTO</span>: ${data.opening_crawl}</p> `
+            console.log(data)})//mostramos el objeto data por consola
+            .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch*/
+    </script>
+    <script>
+         let url2 = 'https://swapi.dev/api/films/2'//variable donde hacemos referencia al origen de los datos
+        fetch(url2) //solicitud a la url
+        .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+        .then(data => {
+            
+            let element = document.getElementById('mostrar2');
+            element.innerHTML = `<p><span>TITULO</span>: ${data.title}</p>  
+                                 <p><span> DIRECTOR</span>:  ${data.director}</p> 
+                                 <p><span> FECHA DE ESTRENO</span>: ${data.release_date}</p> 
+                                 <p><span> ARGUMENTO</span>: ${data.opening_crawl}</p> `
+        console.log(data)})//mostramos el objeto data por consola
+        .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch*/
+    </script>
+    <script>
+        let url3 = 'https://swapi.dev/api/films/3'//variable donde hacemos referencia al origen de los datos
+       fetch(url3) //solicitud a la url
+       .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+       .then(data => {
+           
+           let element = document.getElementById('mostrar3');
+           element.innerHTML = `<p><span>TITULO</span>: ${data.title}</p>  
+                                <p><span> DIRECTOR</span>:  ${data.director}</p> 
+                                <p><span> FECHA DE ESTRENO</span>: ${data.release_date}</p> 
+                                <p><span> ARGUMENTO</span>: ${data.opening_crawl}</p> `
+       console.log(data)})//mostramos el objeto data por consola
+       .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch*/
+    </script>
+    <script>
+        let url4 = 'https://swapi.dev/api/films/4'//variable donde hacemos referencia al origen de los datos
+       fetch(url4) //solicitud a la url
+       .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+       .then(data => {
+           
+           let element = document.getElementById('mostrar4');
+           element.innerHTML = `<p><span>TITULO</span>: ${data.title}</p>  
+                                <p><span> DIRECTOR</span>:  ${data.director}</p> 
+                                <p><span> FECHA DE ESTRENO</span>: ${data.release_date}</p> 
+                                <p><span> ARGUMENTO</span>: ${data.opening_crawl}</p> `
+       console.log(data)})//mostramos el objeto data por consola
+       .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch*/
+    </script>
+   <script>
+    let url5 = 'https://swapi.dev/api/films/5'//variable donde hacemos referencia al origen de los datos
+   fetch(url5) //solicitud a la url
+   .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+   .then(data => {
+       
+       let element = document.getElementById('mostrar5');
+       element.innerHTML = `<p><span>TITULO:</span> ${data.title}</p>  
+                            <p><span> DIRECTOR</span>:  ${data.director}</p> 
+                            <p><span> FECHA DE ESTRENO</span>: ${data.release_date}</p> 
+                            <p><span> ARGUMENTO</span>: ${data.opening_crawl}</p> `
+   console.log(data)})//mostramos el objeto data por consola
+   .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch*/
+  
+
+</script>
+<script>
+    let url6 = 'https://swapi.dev/api/films/6'//variable donde hacemos referencia al origen de los datos
+   fetch(url6) //solicitud a la url
+   .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+   .then(data => {
+       
+       let element = document.getElementById('mostrar6');
+       element.innerHTML = `<p><span>TITULO</span>: ${data.title}</p>  
+                            <p><span> DIRECTOR</span>:  ${data.director}</p> 
+                            <p><span> FECHA DE ESTRENO</span>: ${data.release_date}</p> 
+                            <p><span> ARGUMENTO</span>: ${data.opening_crawl}</p> `
+   console.log(data)})//mostramos el objeto data por consola
+   .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch*/
+</script>
+</body>
+
+</html>
