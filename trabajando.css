@@ -1,0 +1,74 @@
+body{
+    background-image: url(../img/productos/Star-Wars-night-planet-space-sky-Earth-632864-wallhere.com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor{
+    width: min(83%, 120rem);
+    margin: 0 auto;
+    color: beige;
+ }
+
+
+/* Utilidades */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+.logo__nombre,
+.navegacion__enlace{
+ color: beige;
+}
+
+ .imgLogo{
+    size: 0.5rem;
+    justify-content: center;
+}
+.barra{
+    padding-top: 1rem;
+    color: beige;
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px){
+    .navegacion{
+     display: flex;
+     gap: 2rem;
+    }
+ }
+
+ .navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 20px;
+}
+
+h1{
+    color: #ffb13a;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+}
